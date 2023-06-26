@@ -1,0 +1,36 @@
+version: '3'
+services:
+
+  mongo:
+    image: mongo:3.6.19-xenial
+    env_file:
+      - mongo.env
+    container_name: mongo-db
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - data:/data/db
+    networks:
+      - ong-service-network
+
+  backend:
+    container_name: ong-service-api
+    build: ./ong-service
+    restart: always
+    command: node server.js
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017
+    networks:
+      - ong-service-network
+
+networks:
+  ong-service-network:
+    driver: bridge
+
+volumes:
+  data:
