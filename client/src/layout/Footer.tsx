@@ -1,9 +1,11 @@
-import Logo from '../../assets/LogoFooter.svg';
+import { Link } from 'react-router-dom';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LanguageIcon from '@mui/icons-material/Language';
-import { Link } from 'react-router-dom';
+
+import Logo from '@assets/logo/LogoFooter.svg';
 
 function Footer() {
   return (

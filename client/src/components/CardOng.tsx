@@ -1,5 +1,5 @@
 import VolunteerPositionCard from './VolunteerPositionCard';
-import { DataOng } from './home/DataOng';
+import { DataOng } from './DataOng';
 
 export default function CardOng() {
   return (
