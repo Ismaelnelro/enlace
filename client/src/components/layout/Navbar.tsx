@@ -1,18 +1,22 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import Button from '../Button';
-import Logo from '../../assets/LogoEnlaceSVG.svg';
-import User from '../../assets/user.svg';
 import { Menu } from './Menu';
 import Input from '../Input';
 
+import Logo from '@assets/logo/LogoEnlaceSVG.svg';
+import User from '@assets/icons/user.svg';
+
 export function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLogin, setIsLoggin] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const showLoginAndSignUp = (
-    <div className="hidden sm:block sm:ml-6">
+    <div className=" sm:block sm:ml-6">
+
       <div className="flex h-full items-center space-x-52">
         <Input
           className="h-5 rounded-3xl w-96"
@@ -55,18 +59,16 @@ export function Navbar() {
   );
 
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-14">
-          <div className="flex-shrink-0 flex items-center">
-            <Menu isOpen={isMenuOpen} toggle={toggleMenu} />
-            <Link to="/home">
-              <img className="w-12" src={Logo} alt="logo" />
-            </Link>
-          </div>
-          {isLogin ? showLoginAndSignUp : showLogoutAndCart}
+    <nav className=" flex items-center w-screen h-14 px-5 bg-white shadow-lg  z-50">
+      {/* <div className=""> */}
+        <div className="flex items-center justify-between lg:justify-start w-full">
+          <Menu isOpen={isMenuOpen} toggle={toggleMenu} />
+          <Link to="/home">
+            <img className="w-12" src={Logo} alt="logo" />
+          </Link>
         </div>
-      </div>
+        {/* {isLogin ? showLoginAndSignUp : showLogoutAndCart} */}
+      {/* </div> */}
     </nav>
   );
 }

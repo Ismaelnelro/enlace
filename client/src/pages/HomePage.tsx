@@ -8,11 +8,11 @@ import Layout from '../components/layout/Layout';
 export const HomePage = () => {
   return (
     <Layout>
-      <Header />
-      <Collab />
+      {/* <Header /> */}
+      {/* <Collab />
       <PostSearch />
       <FirstExperience />
-      <LandingPageBottom />
+      <LandingPageBottom /> */}
     </Layout>
   );
 };

@@ -12,14 +12,14 @@ function Approuter() {
       <Route path="/home" element={<HomePage />} />
 
       {/* Ruta condicionada por la authenticated del usuario */}
-      {isAuthenticated ? (
+      {/* {isAuthenticated ? (
         <Route path="/dashboard" element={<Dashboard />} />
       ) : (
         <Route path="/auth/*" element={<AuthRoutes />} />
-      )}
+      )} */}
 
       {/* Ruta de protección, en caso de que el usuario quiera ir a una dirección aleatoria */}
-      <Route path="/*" element={<Navigate to="/home" />} />
+      {/* <Route path="/*" element={<Navigate to="/home" />} /> */}
     </Routes>
   );
 }
