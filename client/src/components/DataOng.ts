@@ -1,4 +1,4 @@
-import { VolunteerPosition } from '../../types/VolunteerPosition';
+import { VolunteerPosition } from '../types/VolunteerPosition';
 
 export const DataOng: VolunteerPosition[] = [
   {

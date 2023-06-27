@@ -1,9 +1,9 @@
-import LandingPageBottom from '../components/home/Bottom';
-import Collab from '../components/home/Collab';
-import { FirstExperience } from '../components/home/FirstExperience';
-import Header from '../components/home/Header';
-import PostSearch from '../components/home/PostSearch';
-import Layout from '../components/layout/Layout';
+import LandingPageBottom from '../components/Bottom';
+import Collab from '../components/Collab';
+import { FirstExperience } from '../components/FirstExperience';
+import Header from '../components/Header';
+import PostSearch from '../components/PostSearch';
+import Layout from '../layout/Layout';
 
 export const HomePage = () => {
   return (

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from '../Button';
+import Button from '../components/Button';
 import { Menu } from './Menu';
-import Input from '../Input';
+import Input from '../components/Input';
 
 import Logo from '@assets/logo/LogoEnlaceSVG.svg';
 import User from '@assets/icons/user.svg';

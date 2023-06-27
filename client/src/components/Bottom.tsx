@@ -1,6 +1,6 @@
-import Button from '../Button';
-import Card from '../Card';
-import CardOng from '../CardOng';
+import Button from './Button';
+import Card from './Card';
+import CardOng from './CardOng';
 import LandingOrgsSVG from '../../assets/landing-orgs.svg';
 
 export default function LandingPageBottom() {

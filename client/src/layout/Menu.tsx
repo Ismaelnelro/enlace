@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from '../Button';
+import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import Logo from '@assets/logo/LogoMenu.svg';
 import MenuIcon from '@mui/icons-material/Menu';

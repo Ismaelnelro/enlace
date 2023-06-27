@@ -1,4 +1,4 @@
-import CardOng from '../CardOng';
+import CardOng from './CardOng';
 
 function PostSearch() {
   return (
